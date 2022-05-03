@@ -13,7 +13,7 @@ text_generator = pipeline("text-generation" , model='gpt2')
 prompt_text = st.text_input(label = "Enter your prompt text", 
               value = "Travelling")
 len = st.number_input(label= "Enter maximum length of words",
-                    value = 500)
+                    value = 100)
 
 with st.spinner("AI is at Work.......") :
   #text_generation
